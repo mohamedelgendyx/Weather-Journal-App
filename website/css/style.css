@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Frameworks */
+.glass-white {
+    color: black;
+    box-shadow: 0px 0px 18px 1px #000;
+    background: rgb(255 255 255 / 50%);
+    backdrop-filter: blur(5px);
+}
+
+.glass-black {
+    color: white;
+    box-shadow: 0px 0px 18px 1px #ddd;
+    background: rgb(0 0 0 / 50%);
+    backdrop-filter: blur(5px);
+}
+
+/* App */
+#app {
+    display: flex;
+    flex-direction: column;
+    background: url(../background.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+#app::before {
+    content: "";
+    position: absolute;
+    background: #00000050;
+    width: inherit;
+    height: 100%;
+    z-index: -1;
+}
+/* End App */
+
+/* Header */
+.headline {
+    text-align: center;
+    padding-block: 10px;
+    border-radius: 0 0 80px 80px;
+}
+/* End Header */
+
+/* Main */
+.main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin: 30px;
+}
+/* Form */
+.main .form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 25px;
+    flex-basis: 350px;
+    transition: 0.3s;
+}
+
+.main .form #zip {
+    padding: 12px 20px;
+    margin-block: 50px;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+
+.main .form #feelings {
+    padding: 12px 20px;
+    font-size: 17px;
+    height: 100px;
+    border-radius: 24px;
+    outline: none;
+    border: none;
+    resize: none;
+}
+
+.main .form #generate {
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    margin-block: 120px 60px;
+    border: none;
+    cursor: pointer;
+    background-color: #000000e3;
+    box-shadow: 0px 0px 18px #ddd;
+    color: white;
+    transition: 0.3s;
+}
+
+.main .form #generate:hover {
+    background-color: #000000;
+}
+/* End Form */
+
+/* Entry */
+.main .entry {
+    border-radius: 25px;
+    flex-basis: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .entry .title {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #00000080;
+    padding: 10px;
+    text-align: center;
+}
+
+.main .entry #box {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 30px 0 30px 15px;
+    font-size: 30px;
+    padding-inline: 15px;
+}
+.info i {
+    flex-basis: 75px;
+    text-align: center;
+    font-size: 70px;
+}
+/* End Entry */
+/* End Main */

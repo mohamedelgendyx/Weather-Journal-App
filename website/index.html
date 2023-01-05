@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!-- Main CSS file -->
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Weather Journal</title>
+    </head>
+    <body>
+        <div id="app">
+            <header>
+                <h1 class="headline glass-black">Weather Journal App</h1>
+            </header>
+            <div class="main">
+                <div class="form glass-white">
+                    <input
+                        type="text"
+                        id="zip"
+                        placeholder="Enter zip code of city here (US only)"
+                    />
+                    <textarea
+                        id="feelings"
+                        placeholder="Enter your feelings here"
+                    ></textarea>
+                    <button id="generate" type="submit">Generate</button>
+                </div>
+                <div class="entry glass-white">
+                    <div class="title">Most Recent Entry</div>
+                    <div id="box">
+                        <div class="info">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <div id="date"></div>
+                        </div>
+                        <div class="info">
+                            <i class="fa-solid fa-temperature-half"></i>
+                            <div id="temp"></div>
+                        </div>
+                        <div class="info">
+                            <i class="fa-solid fa-address-book"></i>
+                            <div id="content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js" type="text/javascript"></script>
+    </body>
+</html>
