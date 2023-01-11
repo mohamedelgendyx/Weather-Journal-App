@@ -5,7 +5,7 @@ Asynchronous web app that fetches the weather information from <a href="https://
 
 
 ## Building of the porject
-- Set up project environment, downloaded the required packages (node.js and express.js).
+- Set up the project environment, downloaded the required packages (node.js and express.js).
 - Added POST and GET routes to ensure correct retrieval of data from the server.
 - Acquired API credentials from OpenWeatherMap website.
 - Created async functions to fetch weather data and store it on my local server.
@@ -24,4 +24,4 @@ Asynchronous web app that fetches the weather information from <a href="https://
     - Your feelings
 
 ## Result
-<img src ="UI.jpg"></img>
+![UI](./UI.JPG)
