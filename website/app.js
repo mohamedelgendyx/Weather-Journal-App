@@ -12,22 +12,29 @@ document.getElementById('generate').addEventListener('click', preformAction);
 function preformAction(e) {
     e.preventDefault();
 
+    function validateZipCode(val) {
+        var zipCodePattern = /^\d{5}$|^\d{5}-\d{4}$/;
+        return zipCodePattern.test(val);
+    }
     // User input values
     const zipCode = document.getElementById('zip').value;
     const feelings = document.getElementById('feelings').value;
-
-    getAPIData(baseURL, zipCode, apiKey)
-        .then(function (APIData) {
-            // Add data to our project endpoint
-            postData('/add', {
-                temp: Math.round(APIData.main.temp),
-                date: newDate,
-                content: feelings
+    if (validateZipCode(zipCode)) {
+        getAPIData(baseURL, zipCode, apiKey)
+            .then(function (APIData) {
+                // Add data to our project endpoint
+                postData('/add', {
+                    temp: Math.round(APIData.main.temp),
+                    date: newDate,
+                    content: feelings
+                })
+            }).then(function (newData) {
+                // call updateUI to update browser content
+                updateUI()
             })
-        }).then(function (newData) {
-            // call updateUI to update browser content
-            updateUI()
-        })
+    }
+    else
+        alert('Please enter a valid zip code');
 }
 
 // GET request to fetch the data from the external API
