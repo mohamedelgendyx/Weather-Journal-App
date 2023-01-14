@@ -1,4 +1,4 @@
-# Weather-Journal App Project
+# Weather Journal App ☔
 
 ## Overview
 Asynchronous web app that fetches the weather information from <a href="https://openweathermap.org/current#zip">OpenWeatherMap</a> API based on ZIP code of the city and dynamically update the UI.
