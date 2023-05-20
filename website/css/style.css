@@ -44,7 +44,7 @@
 /* Header */
 .headline {
     text-align: center;
-    padding-block: 10px;
+    padding: 10px 14px;
     border-radius: 0 0 80px 80px;
 }
 /* End Header */
@@ -53,11 +53,19 @@
 .main {
     flex: 1;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main > .container {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 100px;
+    flex: 1;
     margin: 30px;
+    gap: 100px;
 }
+
 /* Form */
 .main .form {
     display: flex;
@@ -127,6 +135,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    min-height: 470px;
     transition: 0.5s;
     opacity: 0;
 }
