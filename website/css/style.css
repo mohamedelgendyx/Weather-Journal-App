@@ -119,6 +119,7 @@
     flex-basis: 400px;
     display: flex;
     flex-direction: column;
+    min-height: 545px;
 }
 
 .main .entry .title {
@@ -135,7 +136,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    min-height: 470px;
     transition: 0.5s;
     opacity: 0;
 }
