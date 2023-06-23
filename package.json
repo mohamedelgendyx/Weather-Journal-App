@@ -3,5 +3,23 @@
     "body-parser": "^1.20.1",
     "cors": "^2.8.5",
     "express": "^4.18.2"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "weather-journal-app",
+  "description": "Asynchronous web app that fetches the weather information from OpenWeatherMaps API based on ZIP code of the city and dynamically update the UI.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohamedelgendyx/Weather-Journal-App"
+  },
+  "author": "Mohamed Elgendy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohamedelgendyx/Weather-Journal-App/issues"
+  },
+  "homepage": "https://github.com/mohamedelgendyx/Weather-Journal-App#readme"
 }
